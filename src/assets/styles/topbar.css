@@ -1,0 +1,633 @@
+@font-face {
+	font-family: 'VelaSans';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../../assets/fonts/VelaSans-Light.ttf') format(woff);
+}
+
+body {
+	font-family: "Helvetica Neue", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.top {
+	width: 100%;
+	height: 50px;
+	background-color: #fbf5ef;
+	position: sticky;
+	padding-bottom: 15px;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "Josefin Sans", sans-serif;
+	z-index: 999;
+}
+
+.hamburgerMenu {
+	display: none;
+}
+
+.topNav {
+	width: 100%;
+	height: 200px;
+	background-color: #fbf5ef;
+	position: sticky;
+	/* padding-top: 15px; */
+	top: 0;
+	display: flex;
+	align-items: center;
+	font-family: "Josefin Sans", sans-serif;
+	/* z-index: 999; */
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.infoWrapper {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	font-family: "Josefin Sans", sans-serif;
+	justify-content: center;
+	/* z-index: 999; */
+}
+
+.infoWrapper>i {
+	font-size: 16px;
+	margin-right: 20px;
+	gap: 5px;
+}
+
+.infoWrapper>i>a {
+	text-decoration: none;
+	font-size: 14px;
+	margin-left: 5px;
+	color: #444;
+	cursor: pointer;
+	font-family: "Varela Round", sans-serif;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.infoContainer {
+	position: sticky;
+	display: flex;
+	justify-content: center;
+	background-color: #f1f1f1;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	top: 0;
+	width: 100%;
+}
+
+.topLeft,
+.topRight {
+	flex: 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.topLeft {
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+
+.topRight {
+	gap: 20px;
+}
+
+.topRight>a>i {
+	font-size: 45px;
+	margin-right: 0;
+}
+
+.fa-square-facebook:before {
+	color: #4267b2;
+}
+
+.fa-instagram:before {
+	background: radial-gradient(circle at 30% 107%,
+			#fdf497 0%,
+			#fdf497 5%,
+			#fd5949 45%,
+			#d6249f 60%,
+			#285aeb 90%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.person {
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+.profession {
+	font-size: 14px;
+	color: #000000c9;
+	padding-bottom: 5px;
+}
+
+.topCenter {
+	flex: 6;
+}
+
+.topIcon {
+	font-size: 30px;
+	margin-right: 10px;
+	color: #444;
+	cursor: pointer;
+}
+
+.topImg {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	padding-top: 10px;
+	/* object-fit: cover; */
+}
+
+.topImg,
+.person,
+.profession {
+	/* Add a transition for the properties you want to animate */
+	transition: all 0.2s ease;
+}
+
+.scrolledTopLeft .topImg {
+	width: 80px;
+	/* Adjust the reduced width as needed */
+	height: 80px;
+	/* Adjust the reduced height as needed */
+}
+
+.scrolledTopLeft .person {
+	font-size: 14px;
+}
+
+.scrolledTopLeft .profession {
+	font-size: 10px;
+}
+
+.topList {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+
+.topListItem.dropdown {
+	position: relative;
+}
+
+.dropdownMenu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #fcfbf9;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+		rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	z-index: 999;
+	list-style: none;
+	padding: 10px 20px;
+	width: 325px;
+	border-radius: 3px;
+}
+
+.dropdownMenu.visible {
+	display: block;
+	cursor: default;
+}
+
+.dropdownMenuItem {
+	padding: 10px 10px;
+	font-size: 16px;
+	letter-spacing: 1.2px;
+	font-family: 'VelaSans';
+	font-weight: 400;
+	/* transform: skew(-8deg);
+	-webkit-transform: skew(-8deg); */
+}
+
+/* Add an arrow icon for the dropdown */
+
+/* Style the arrow icon when dropdown is open */
+
+.topListItem {
+	margin-right: 20px;
+	font-size: 18px;
+	font-weight: 300;
+	font-style: italic;
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	font-family: 'VelaSans';
+	font-weight: 500;
+}
+
+.dropdownIcon {
+	font-size: 16px;
+	padding: 0 8px;
+	text-align: center;
+	transition: transform 0.3s ease;
+}
+
+.rotate180 {
+	transform: rotate(180deg);
+	transform-origin: center;
+}
+
+.topListItem:last-child {
+	margin-right: 0;
+}
+
+.topSearchIcon {
+	font-size: 18px;
+	color: #666;
+	cursor: pointer;
+	margin-left: 15px;
+}
+
+.bar {
+	width: 25px;
+	height: 3px;
+	background-color: #444;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+.topListItem span {
+	display: inline-block;
+	position: relative;
+	/* color: #0087ca; */
+}
+
+.topListItem span::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #000000ca;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.topListItem span:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.link {
+	display: inline-block;
+	position: relative;
+	/* color: #0087ca; */
+}
+
+.link:not(.excludeHover)::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #000000ca;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.link:not(.excludeHover):hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.topListItem.dropdown {
+	margin-right: 12px;
+}
+
+/* Media Query for Tablets (max-width: 992px) */
+@media screen and (max-width: 992px) {
+	.topCenter {
+		flex: 6;
+		display: flex;
+		justify-content: center;
+		/* Center the content horizontally */
+		align-items: center;
+		/* Center the content vertically */
+	}
+
+	.topList {
+		display: none;
+		align-items: center;
+		position: absolute;
+		top: 50px;
+		right: 0;
+		width: 100%;
+		/* z-index: 999; */
+	}
+
+	.topListItem {
+		margin: 15px 0;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+	.topListItem:last-child {
+		margin-bottom: 15px;
+	}
+
+	.top {
+		height: 40px;
+		/* Modify height for smaller screens */
+		padding-bottom: 10px;
+		/* Modify padding-bottom for smaller screens */
+	}
+
+	.topImg {
+		width: 120px;
+		/* Modify width for the logo on smaller screens */
+		height: 120px;
+		/* Modify height for the logo on smaller screens */
+	}
+
+	.person {
+		font-size: 16px;
+		letter-spacing: 0px;
+	}
+
+	.profession {
+		font-size: 12px;
+	}
+
+	.topListItem {
+		margin-right: 40px;
+		font-size: 16px;
+	}
+
+	.topIcon {
+		font-size: 25px;
+	}
+
+	.hamburgerMenu {
+		display: flex;
+		justify-content: center;
+		font-size: 30px;
+	}
+
+	.hamburgerMenu:hover {
+		color: #333;
+		cursor: pointer;
+	}
+
+	.hamburgerMenu:before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: #444;
+		margin: 6px 0;
+	}
+
+	.hamburgerMenu:hover:before {
+		width: 0;
+		transition: width 0.4s;
+	}
+
+	.hamburgerMenu>ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 auto;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 50%;
+		left: 25%;
+		padding: 5px;
+		list-style: none;
+		background-color: #fcfbf9;
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+			rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+		cursor: default;
+		overflow-y: auto;
+		max-height: calc(100vh - 50px);
+	}
+
+	.hamburgerMenuItem,
+	.hamburgerMenuItemSectionName {
+		padding: 10px;
+		padding-left: 20px;
+		font-size: 22px;
+	}
+
+	.hamburgerMenuItemSectionName {
+		font-weight: bold;
+	}
+
+	.hamburgerMenuItem {
+		padding-left: 40px;
+		font-family: 'VelaSans';
+		font-weight: 400;
+		/* transform: skew(-8deg);
+		-webkit-transform: skew(-8deg); */
+	}
+
+	.scrolledTopLeft .topImg {
+		width: 70px;
+		/* Adjust the reduced width as needed */
+		height: 70px;
+		/* Adjust the reduced height as needed */
+	}
+
+	.scrolledTopLeft .person {
+		font-size: 12px;
+	}
+
+	.scrolledTopLeft .profession {
+		font-size: 8px;
+	}
+}
+
+/* Media Query for Small Tablets and Larger Phones (max-width: 768px) */
+@media screen and (max-width: 768px) {
+	.infoWrapper {
+		font-size: 14px;
+		gap: 5px;
+		justify-content: center;
+	}
+
+	.top {
+		height: 40px;
+		/* Modify height for smaller screens */
+		padding-bottom: 10px;
+		/* Modify padding-bottom for smaller screens */
+	}
+
+	.topImg {
+		width: 100px;
+		/* Modify width for the logo on smaller screens */
+		height: 100px;
+		/* Modify height for the logo on smaller screens */
+	}
+
+	.topListItem {
+		margin-right: 30px;
+		font-size: 14px;
+	}
+
+	.topLeft,
+	.topRight {
+		flex: 4;
+	}
+
+	.hamburgerMenuItem {
+		font-size: 20px;
+	}
+
+	.scrolledTopLeft .topImg {
+		width: 60px;
+		/* Adjust the reduced width as needed */
+		height: 60px;
+		/* Adjust the reduced height as needed */
+	}
+
+	.scrolledTopLeft .person {
+		font-size: 12px;
+	}
+
+	.scrolledTopLeft .profession {
+		font-size: 8px;
+	}
+
+	.hamburgerList {
+		border-radius: 3px;
+	}
+}
+
+/* Media Query for Small Phones and Mobile Devices (max-width: 576px) */
+@media screen and (max-width: 576px) {
+	.infoWrapper {
+		gap: 10px;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.infoWrapper>i {
+		font-size: 14px;
+		margin-right: 0;
+		gap: 5px;
+	}
+
+	.infoWrapper>i>a {
+		font-size: 14px;
+	}
+
+	.top {
+		height: 30px;
+		/* Modify height for even smaller screens */
+		padding-bottom: 5px;
+		/* Modify padding-bottom for even smaller screens */
+	}
+
+	.topImg {
+		width: 70px;
+		/* Modify width for the logo on even smaller screens */
+		height: 70px;
+		/* Modify height for the logo on even smaller screens */
+	}
+
+	.topListItem {
+		margin-right: 10px;
+		/* Further decrease the margin-right for the menu items on smallest screens */
+		font-size: 12px;
+		/* Reduce font size for better fit on smallest screens */
+	}
+
+	.topLeft,
+	.topRight {
+		flex: 8;
+	}
+
+	.topIcon {
+		font-size: 20px;
+	}
+
+	.person {
+		font-size: 12px;
+	}
+
+	.profession {
+		font-size: 8px;
+	}
+
+	.bar {
+		width: 20px;
+		height: 2px;
+		margin: 4px 0;
+	}
+
+	.topListItem {
+		font-size: 14px;
+	}
+
+	.topRight>a>i {
+		font-size: 27px;
+	}
+
+	.topRight {
+		gap: 10px;
+	}
+
+	.hamburgerMenu>ul {
+		width: 75%;
+		left: 9%;
+	}
+
+	.hamburgerMenuItem {
+		padding: 7px;
+		font-size: 16px;
+	}
+
+	.scrolledTopLeft .topImg {
+		width: 55px;
+		/* Adjust the reduced width as needed */
+		height: 55px;
+		/* Adjust the reduced height as needed */
+	}
+
+	.scrolledTopLeft .person {
+		font-size: 10px;
+	}
+
+	.scrolledTopLeft .profession {
+		font-size: 6px;
+	}
+
+	/* .contentWrapper h2 {
+		text-align: left;
+	} */
+	.hamburgerMenuItem,
+	.hamburgerMenuItemSectionName {
+		padding: 3px;
+		padding-left: 20px;
+	}
+
+	.hamburgerMenuItemSectionName {
+		font-size: 18px;
+	}
+
+	.hamburgerMenuItem {
+		padding-left: 40px;
+	}
+}

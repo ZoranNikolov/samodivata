@@ -1,0 +1,145 @@
+.post {
+    width: 1100px;
+    margin: 0px 25px 40px 25px;
+}
+
+.postImg {
+    width: 100%; /* Set the initial width to 100% */
+    max-width: 400px; /* Set the maximum width for the image */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    border-radius: 7px;
+    object-fit: cover;
+    float: left;
+	margin-top: 15px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/* .postImg {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 7px;
+	margin-bottom: 10px;
+} */
+
+.postInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postCat {
+    font-family: "Varela Round", sans-serif;
+    font-size: 11px;
+    color: #be9656;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.postTitle {
+    /* Remove the text-align property */
+    font-family: "Josefin Sans", sans-serif;
+    font-style: 24px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+/* .postTitle {
+    font-family: "Josefin Sans", sans-serif;
+    font-style: 24px;
+    font-weight: 700;
+    margin-top: 15px;
+} */
+
+.postDate {
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-size: 13px;
+    color: #999;
+    margin-top: 15px;
+}
+
+.postDesc {
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    color: #444;
+    line-height: 24px;
+    /* Remove the margin-top to allow the text to flow around the image */
+    /* margin-top: 15px; */
+    /* Add some padding to create space between the image and the text */
+    padding-top: 15px;
+    text-align: justify;
+}
+.postInfo {
+    clear: both;
+}
+
+/* Media Query for tablets and smaller screens (max-width: 992px) */
+@media screen and (max-width: 1040px) {
+    .post {
+        width: 90%;
+        margin: 10px; /* Adjust margin for smaller screens */
+		margin: 0 auto;
+    }
+
+    .postImg {
+		max-width: 100%; /* Adjust the maximum width for smaller screens */
+		float: none; /* Remove the float property to center the image */
+		margin-right: 0; /* Remove the right margin for spacing */
+    }
+
+    .postTitle {
+        font-size: 20px; /* Reduce font size for smaller screens */
+		text-align: center;
+    }
+
+    .postDesc {
+        font-size: 16px; /* Reduce font size for smaller screens */
+		padding-bottom: 10px;
+    }
+}
+
+/* Media Query for smaller tablets and larger phones (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .post {
+        width: 90%;
+    }
+
+    .postImg {
+		max-width: 100%; /* Adjust the maximum width for smaller screens */
+		float: none; /* Remove the float property to center the image */
+		margin-right: 0; /* Remove the right margin for spacing */
+    }
+
+    .postTitle {
+        font-size: 20px; /* Reduce font size for smaller screens */
+    }
+
+    .postDesc {
+        font-size: 16px; /* Reduce font size for smaller screens */
+    }
+}
+
+/* Media Query for small phones and mobile devices (max-width: 576px) */
+@media screen and (max-width: 576px) {
+    .post {
+        width: 90%;
+    }
+
+    .postImg {
+		max-width: 100%; /* Adjust the maximum width for smaller screens */
+		float: none; /* Remove the float property to center the image */
+		margin-right: 0; /* Remove the right margin for spacing */
+    }
+
+    .postTitle {
+        font-size: 18px; /* Reduce font size for smaller screens */
+    }
+
+    .postDesc {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+}

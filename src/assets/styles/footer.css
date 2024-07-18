@@ -1,0 +1,14 @@
+.footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.footerContent {
+	display: flex;
+	justify-content: center;
+}
+
+/* Adjust the styles as needed for your footer */

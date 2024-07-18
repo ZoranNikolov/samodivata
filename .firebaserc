@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "samodivata-cab94",
+    "staging": "samodivata-i-karakondjulat"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

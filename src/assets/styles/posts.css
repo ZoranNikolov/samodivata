@@ -1,0 +1,810 @@
+/* Hide the scrollbar but allow scrolling */
+body::-webkit-scrollbar {
+	width: 0.0000001rem;
+	/* Adjust the width of the scrollbar as needed */
+	background: transparent;
+	/* Set the scrollbar background color to transparent */
+}
+
+/* Original styles for larger screens */
+
+.singlePost {
+	flex: 9;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 175px;
+	padding-bottom: 100px;
+	background-color: #fbf5ef;
+}
+
+.iframeWrapper {
+	padding-top: 40px;
+	display: flex;
+	justify-content: center;
+	/* Horizontally center the content */
+	margin: 0 auto;
+	height: 500px;
+	width: 100%;
+}
+
+.iframeWrapper iframe {
+	width: 100%;
+	max-width: 900px;
+	height: auto;
+}
+
+
+.singlePostWrapper {
+	padding: 50px 0;
+	min-height: 420px;
+}
+
+.singlePostImg {
+	width: 400px;
+	height: 400px;
+	border-radius: 5px;
+	object-fit: cover;
+	float: left;
+	margin-right: 20px;
+}
+
+.certificates-container {
+	display: flex;
+	flex-wrap: wrap;
+	/* flex-direction: column; */
+	align-items: center;
+	justify-content: center;
+	padding-top: 50px;
+}
+
+.certificateImg {
+	width: 40%;
+	height: auto;
+	border-radius: 5px;
+	margin: 10px;
+	/* object-fit: cover; */
+}
+
+.img-width-auto {
+	object-fit: contain;
+	width: auto;
+}
+
+.img-height-300 {
+	height: 300px;
+}
+
+.img-height-500 {
+	height: 560px;
+}
+
+.singlePostTitle {
+	margin: 10px;
+	font-family: "Varela Rounded", sans-serif;
+	font-size: 28px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+.singlePostEdit {
+	float: right;
+	font-size: 16px;
+}
+
+.singlePostIcon {
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.singlePostIcon:first-child {
+	color: teal;
+}
+
+.singlePostIcon:last-child {
+	color: tomato;
+}
+
+.singlePostInfo {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	font-family: "Varela Rounded", sans-serif;
+	color: #b39656;
+}
+
+.singlePostDesc {
+	color: #666;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: justify;
+	font-family: "Varela rounded", sans-serif;
+	letter-spacing: 1px;
+}
+
+.priceList {
+	margin-top: 150px;
+	color: #666;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: right;
+	font-family: "Varela rounded", sans-serif;
+}
+
+p::first-letter {
+	margin-left: 30px;
+}
+
+.singlePostDesc>p:first-child:first-letter {
+	margin-left: 30px;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.quote {
+	font-family: "Varela Round", sans-serif;
+	font-size: 16px;
+	padding: 10px 20px;
+	color: #666;
+	line-height: 24px;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	font-style: italic;
+}
+
+.quoteAuthor {
+	text-align: right;
+	font-weight: bold;
+}
+
+.singlePostDesc>ul {
+	list-style: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* Styling for the form container */
+.contact-form-container {
+	max-width: 50%;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	/* Center-align the contents of the container */
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+	/* Reset text-align for input labels */
+}
+
+.form-group {
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: center;
+	/* Reset text-align for input labels */
+}
+
+.contact-form-container>h3 {
+	font-family: "Varela Rounded", sans-serif;
+	font-size: 26px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* .form-group {
+	display: inline-block;
+} */
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Styling for form groups */
+.form-group {
+	margin-bottom: 20px;
+	width: 90%;
+}
+
+.form-group>input {
+	width: 90%;
+}
+
+/* Styling for labels */
+label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+/* Styling for inputs and textareas */
+.contact-form input,
+.contact-form textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 14px;
+	width: 100%;
+	box-sizing: border-box;
+	transition: border-color 0.3s;
+}
+
+.contact-form textarea {
+	height: 200px;
+}
+
+.contact-form>input:focus,
+.contact-form>textarea:focus {
+	border-color: #666;
+}
+
+/* Styling for the submit button */
+.contact-form>button {
+	padding: 10px 20px;
+	background-color: #666;
+	color: #fbf5ef;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.contact-form>button:hover {
+	background-color: rgb(58, 58, 58);
+}
+
+.pt-10 {
+	padding-top: 10px;
+}
+
+.pb-10 {
+	padding-bottom: 10px;
+}
+
+blockquote.w-90 {
+	margin: 10px 5px;
+}
+
+.highlighted-text {
+	display: inline;
+	flex-direction: column;
+	width: 70%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.highlighted-text h3 {
+	padding-bottom: 10px;
+	font-weight: 600;
+}
+
+.h-divider {
+	margin: auto;
+	margin-top: 20px;
+	width: 100%;
+	position: relative;
+}
+
+.h-divider .shadow {
+	overflow: hidden;
+	height: 20px;
+	/* margin-top: 10px; */
+}
+
+.h-divider .shadow:after {
+	content: '';
+	display: block;
+	margin: -25px auto 0;
+	width: 100%;
+	height: 25px;
+	border-radius: 125px/12px;
+	box-shadow: 0 0 8px black;
+}
+
+.h-divider .text {
+	width: 100px;
+	height: 45px;
+	padding: 10px;
+	position: absolute;
+	bottom: 100%;
+	margin-bottom: -33px;
+	left: 50%;
+	margin-left: -60px;
+	border-radius: 100%;
+	box-shadow: 0 2px 4px #999;
+	background: white;
+}
+
+.h-divider .text i {
+	position: absolute;
+	top: 4px;
+	bottom: 4px;
+	left: 4px;
+	right: 4px;
+	border-radius: 100%;
+	border: 1px dashed #aaa;
+	text-align: center;
+	line-height: 50px;
+	font-style: normal;
+	color: #999;
+}
+
+.h-divider .text2 {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	bottom: 100%;
+	margin-bottom: -35px;
+	left: 50%;
+	margin-left: -25px;
+	border-radius: 100%;
+	box-shadow: 0 2px 4px #999;
+	background: white;
+}
+
+.h-divider img {
+	position: absolute;
+	margin: 4px;
+	max-width: 60px;
+	border-radius: 100%;
+	border: 1px dashed #aaa;
+}
+
+.image-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 25px;
+}
+
+.image-wrapper .singlePostImg {
+	width: 49%;
+	height: 100%;
+	margin-right: 0;
+}
+
+.grid-view-container {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	gap: 25px;
+}
+
+.grid-view-container .grid-view-element {
+	flex: 30%;
+	box-sizing: border-box;
+	border: 1px solid gray;
+	border-radius: 20px;
+	padding: 25px 25px;
+}
+
+.grid-view-element-heading {
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.grid-view-element ul {
+	margin-left: 0;
+}
+
+/* .grid-view-element ul li {
+	text-align: center;
+} */
+
+/* Add styles for event cards */
+
+.events h1 {
+	margin: 20px 0px;
+	text-align: center;
+	font-size: 46px;
+	text-decoration: none;
+}
+
+.events h2 {
+	margin: 10px 0px;
+	font-size: 28px;
+	font-weight: normal;
+}
+
+.eventsGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	gap: 20px;
+}
+
+.eventCard h3 {
+	margin-top: 10px;
+	font-size: 18px;
+}
+
+.eventCard p {
+	margin-top: 5px;
+	font-size: 14px;
+	color: #888;
+	text-decoration: none;
+}
+
+.eventCard p::first-letter,
+.singleEventCard p::first-letter {
+	margin-left: 0px;
+}
+
+.eventCard {
+	position: relative;
+	/* Ensure proper positioning for the overlay */
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin-bottom: 20px;
+	transition: transform 0.3s ease-in-out;
+	/* Add transition effect for smooth hover */
+}
+
+.eventCard img {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-bottom: 10px;
+}
+
+.singleEventCard {
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.singleEventCard img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 8px;
+	margin-bottom: 10px;
+}
+
+.eventCard h3 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.eventCard p {
+	font-size: 14px;
+	color: #888;
+	margin-bottom: 0;
+}
+
+.eventCard::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	opacity: 0;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+	transition: opacity 0.3s ease-in-out;
+	/* Add transition effect for smooth hover */
+}
+
+/* Add hover effect */
+.eventCard:hover::before {
+	opacity: 1;
+}
+
+.eventsGrid a {
+	text-decoration: none;
+	/* Remove underline from the text within the link */
+	color: inherit;
+	/* Ensure the link inherits the text color */
+}
+
+.singleEventWrapper {
+	width: 65%;
+	margin: 0 auto;
+}
+
+.imageGallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+}
+
+.imageGallery img {
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+	border-radius: 3px;
+	position: relative;
+}
+
+/* Add hover effect to scale up the card */
+.imageGallery img {
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+	border-radius: 3px;
+	position: relative;
+	transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	/* Add transition effect for smooth hover */
+}
+
+/* Add shadow effect on hover */
+.imageGallery img:hover {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	/* Adjust the shadow color and intensity as needed */
+}
+
+.slider-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.65);
+	/* semi-transparent background */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	/* ensure the slider appears above other content */
+}
+
+.slider-wrapper {
+	max-width: 50%;
+	margin: 0 auto;
+	/* adjust the maximum width of the slider wrapper */
+}
+
+.slider-container img {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	border-radius: 5px;
+	object-fit: cover;
+	max-height: 80vh;
+	/* adjust the maximum height of the images */
+}
+
+body.slider-open {
+	overflow: hidden;
+}
+
+.pb-5 {
+	padding-bottom: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+	.slider-wrapper {
+		max-width: 80%;
+		/* adjust the maximum width of the slider wrapper */
+	}
+}
+
+/* Media Query for Tablet Devices (max-width: 992px) */
+@media screen and (max-width: 992px) {
+	.singlePost {
+		width: 90%;
+	}
+
+	.singlePostImg {
+		width: 100%;
+		/* Adjust the image width to fit the screen */
+		height: auto;
+		/* Allow the height to adjust proportionally */
+		margin-right: 0;
+		/* Remove the right margin for full width */
+		object-fit: cover;
+		float: none;
+		/* Remove the float to stack the image on top of the content */
+	}
+
+	.singlePostWrapper {
+		padding: 25px;
+	}
+
+	.priceList {
+		margin-top: 100px;
+		color: #666;
+		font-size: 14px;
+		margin-left: -20px;
+		/* text-align: justify; */
+	}
+
+	.contact-form-container {
+		max-width: 90%;
+		/* Adjust the container width for smaller screens */
+	}
+
+	.certificateImg {
+		width: 100%;
+	}
+
+	.grid-view-container {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		gap: 10px;
+	}
+
+	.grid-view-container .grid-view-element {
+		padding: 25px 25px;
+	}
+
+	.events h1 {
+		font-size: 42px;
+	}
+
+	.events h2 {
+		font-size: 26px;
+	}
+
+	.singleEventCard {
+		width: 75%;
+		margin-bottom: 40px;
+	}
+
+	.singleEventWrapper {
+		width: 80%;
+	}
+
+	.iframeWrapper iframe {
+		width: 90%;
+		/* Adjust the width of the iframe for tablets */
+		max-width: none;
+		/* Remove the maximum width for tablets */
+	}
+}
+
+/* Media Query for Mobile Devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+	.singlePostTitle {
+		font-size: 24px;
+		/* Decrease the title font size for smaller screens */
+	}
+
+	.singlePostDesc {
+		font-size: 16px;
+		/* Decrease the description font size for smaller screens */
+	}
+
+	.priceList {
+		font-size: 12px;
+		/* padding-left: -10px; */
+		/* padding-right: 50px; */
+	}
+
+	.singlePostImg {
+		width: 100%;
+		/* Adjust the image width to fit the screen */
+		height: auto;
+		/* Allow the height to adjust proportionally */
+		margin-right: 0;
+		/* Remove the right margin for full width */
+		float: none;
+		/* Remove the float to stack the image on top of the content */
+	}
+
+	.singlePost {
+		width: 90%;
+	}
+
+	.singlePostWrapper {
+		padding: 10px;
+	}
+
+	.contact-form-container {
+		max-width: 90%;
+		/* Adjust the container width for smaller screens */
+	}
+
+	.image-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		justify-content: space-between;
+	}
+
+	.image-wrapper .singlePostImg {
+		width: 100%;
+		height: 100%;
+		margin-right: 0;
+	}
+
+	/* .eventCard {
+        width: calc(80% - 20px);
+    } */
+
+	.events h1 {
+		margin: 20px 0px;
+		text-align: center;
+		font-size: 38px;
+	}
+
+	.singleEventCard {
+		width: 80%;
+		margin-bottom: 40px;
+		padding: 15px;
+	}
+
+	.singleEventCard img {
+		height: 300px;
+	}
+
+	.singleEventWrapper {
+		width: 90%;
+	}
+
+	.slick-arrow {
+		display: none !important
+	}
+}
+
+/* Media Query for Mobile Phones (max-width: 576px) */
+@media screen and (max-width: 576px) {
+	.singlePostTitle {
+		font-size: 20px;
+		/* Decrease the title font size for smaller screens */
+	}
+
+	.singlePostDesc {
+		font-size: 14px;
+		/* Decrease the description font size for smaller screens */
+	}
+
+	.singlePostWrapper {
+		padding: 5px;
+	}
+
+	.priceList {
+		font-size: 10px;
+		/* padding-left: -10px; */
+		/* padding-right: 50px; */
+	}
+
+	.eventsGrid {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	}
+
+	.events h1 {
+		margin: 20px 0px;
+		text-align: center;
+		font-size: 32px;
+	}
+
+	.singleEventCard {
+		margin-bottom: 20px;
+	}
+
+	.singleEventCard img {
+		height: 300px;
+	}
+
+	.singleEventWrapper {
+		width: 100%;
+	}
+
+	.iframeWrapper {
+		height: 300px;
+	}
+}
