@@ -13,6 +13,7 @@
 	height: 100%;
 	/* Set height to 100vh */
 	object-fit: cover;
+	filter: blur(1.5px);
 }
 
 .header-content {

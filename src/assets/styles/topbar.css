@@ -93,6 +93,7 @@ body {
 	flex-direction: column;
 	text-align: center;
 	justify-content: center;
+	padding: 20px;
 }
 
 .topRight {
@@ -144,8 +145,8 @@ body {
 }
 
 .topImg {
-	width: 140px;
-	height: 140px;
+	width: 130px;
+	height: 130px;
 	border-radius: 50%;
 	padding-top: 10px;
 	/* object-fit: cover; */
@@ -171,6 +172,10 @@ body {
 
 .scrolledTopLeft .profession {
 	font-size: 10px;
+}
+
+.scrolledTopLeft .topLeft {
+	padding: 0px !important;
 }
 
 .topList {

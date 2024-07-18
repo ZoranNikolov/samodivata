@@ -1,6 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../../assets/styles/topbar.css";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/logo.jpg";
 import { useState, useEffect, useRef } from "react";
 
 export default function TopBar() {
@@ -63,18 +63,22 @@ export default function TopBar() {
 							<a href="tel:">телефон на читалището</a>
 						</i> */}
 						<i className="contactIcon fa-solid fa-envelope">
-							<a href="mailto:ch_g.vranovo@abv.bg">
-								ch_g.vranovo@abv.bg
+							<a href="mailto:samodivataikarakondjulat@gmail.com">
+								samodivataikarakondjulat@gmail.com
 							</a>
 						</i>
 					</div>
 				</div>
-				<div className="topNav">
+				{/* <div className="topNav"> */}
+				<div className={`topNav ${scrolled ? "scrolledTopLeft" : ""}`}>
 					<div
+						className="topLeft"
+					>
+						{/* <div
 						className={`topLeft ${
 							scrolled ? "scrolledTopLeft" : ""
 						}`}
-					>
+					> */}
 						<Link
 							className="link excludeHover"
 							to="/"
@@ -82,8 +86,8 @@ export default function TopBar() {
 						>
 							<img className="topImg" src={logo} alt="logo" />
 						</Link>
-						<span className="person">Читалище Светлина</span>
-						<span className="profession">с. Голямо Враново</span>
+						<span className="person">Самодивата и Караконджулът</span>
+						<span className="profession">Поредица</span>
 					</div>
 					<div className="topCenter">
 						<div className="hamburgerMenu">
