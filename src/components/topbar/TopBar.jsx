@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import "../../assets/styles/topbar.css";
 import logo from "../../assets/images/logo.jpg";
 import { useState, useEffect, useRef } from "react";
+import Player from "../player/player";
 
 export default function TopBar() {
 	const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -57,6 +58,7 @@ export default function TopBar() {
 	return (
 		<>
 			<div className="top">
+				{/* <Player /> */}
 				{/* <div className="infoContainer"> */}
 					{/* <div className="infoWrapper"> */}
 						{/* <i className="contactIcon fa-solid fa-envelope">
@@ -214,6 +216,7 @@ export default function TopBar() {
 						</ul>
 					</div>
 					<div className="topRight">
+						<Player />
 						<a
 							href="https://www.facebook.com/samodivata.i.karakondjulat"
 							target="_blank"

@@ -12,8 +12,8 @@ import SingleGallery from './components/posts/gallery/singleGallery/singleGaller
 import Blog from './pages/blog/blog';
 import News from './pages/news/news';
 import SingleNews from './pages/news/singleNews/singleNews';
-// import BackgroundMusic from './components/backgroundMusic/backgroundMusic';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+// import Player from './components/player/player';
 
 function ScrollToTopOnRouteChange() {
   const { pathname } = useLocation();
@@ -28,7 +28,7 @@ function ScrollToTopOnRouteChange() {
 function App() {
   return (
     <BrowserRouter>
-      {/* <BackgroundMusic /> */}
+      {/* <Player /> */}
       <ScrollToTopOnRouteChange />
       <TopBar />
       <Helmet>
