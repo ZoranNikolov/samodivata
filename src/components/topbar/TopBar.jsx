@@ -57,18 +57,15 @@ export default function TopBar() {
 	return (
 		<>
 			<div className="top">
-				<div className="infoContainer">
-					<div className="infoWrapper">
-						{/* <i className="contactIcon fa-solid fa-phone">
-							<a href="tel:">телефон на читалището</a>
-						</i> */}
-						<i className="contactIcon fa-solid fa-envelope">
+				{/* <div className="infoContainer"> */}
+					{/* <div className="infoWrapper"> */}
+						{/* <i className="contactIcon fa-solid fa-envelope">
 							<a href="mailto:samodivataikarakondjulat@gmail.com">
 								samodivataikarakondjulat@gmail.com
 							</a>
-						</i>
-					</div>
-				</div>
+						</i> */}
+					{/* </div> */}
+				{/* </div> */}
 				{/* <div className="topNav"> */}
 				<div className={`topNav ${scrolled ? "scrolledTopLeft" : ""}`}>
 					<div
@@ -86,8 +83,8 @@ export default function TopBar() {
 						>
 							<img className="topImg" src={logo} alt="logo" />
 						</Link>
-						<span className="person">Самодивата и Караконджулът</span>
-						<span className="profession">Поредица</span>
+						{/* <span className="person">Самодивата и Караконджулът</span>
+						<span className="profession">Поредица</span> */}
 					</div>
 					<div className="topCenter">
 						<div className="hamburgerMenu">
@@ -114,7 +111,7 @@ export default function TopBar() {
 											to="/about"
 											onClick={handleLinkClick("/about")}
 										>
-											ЗА НАС
+											ЗА ПОРЕДИЦАТА
 										</Link>
 									</li>
 
@@ -124,7 +121,7 @@ export default function TopBar() {
 											to="/about"
 											onClick={handleLinkClick("/events")}
 										>
-											СЪБИТИЯ
+											ТВОРЕНИЯ
 										</Link>
 									</li>
 									<li className="hamburgerMenuItemSectionName">
@@ -147,7 +144,7 @@ export default function TopBar() {
 											БЛОГ
 										</Link>
 									</li>
-									<li className="hamburgerMenuItemSectionName">
+									{/* <li className="hamburgerMenuItemSectionName">
 										<Link
 											className="link"
 											to="/news"
@@ -155,7 +152,7 @@ export default function TopBar() {
 										>
 											НОВИНИ
 										</Link>
-									</li>
+									</li> */}
 								</ul>
 							)}
 						</div>
@@ -175,7 +172,7 @@ export default function TopBar() {
 									to="/about"
 									onClick={handleLinkClick("/about")}
 								>
-									<span>ЗА НАС</span>
+									<span>ЗА ПОРЕДИЦАТА</span>
 								</Link>
 							</li>
 							<li className="topListItem">
@@ -184,7 +181,7 @@ export default function TopBar() {
 									to="/about"
 									onClick={handleLinkClick("/events")}
 								>
-									<span>СЪБИТИЯ</span>
+									<span>ТВОРЕНИЯ</span>
 								</Link>
 							</li>
 							<li className="topListItem">
@@ -205,7 +202,7 @@ export default function TopBar() {
 									<span>БЛОГ</span>
 								</Link>
 							</li>
-							<li className="topListItem">
+							{/* <li className="topListItem">
 								<Link
 									className="link"
 									to="/news"
@@ -213,16 +210,30 @@ export default function TopBar() {
 								>
 									<span>НОВИНИ</span>
 								</Link>
-							</li>
+							</li> */}
 						</ul>
 					</div>
 					<div className="topRight">
 						<a
-							href="https://www.facebook.com/profile.php?id=100057168165857"
+							href="https://www.facebook.com/samodivata.i.karakondjulat"
 							target="_blank"
 							rel="noreferrer"
 						>
 							<i className="topIcon fa-brands fa-square-facebook"></i>
+						</a>
+						<a
+							href="https://www.instagram.com/samodivataikarakondjulat/"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<i className="topIcon fa-brands fa-instagram"></i>
+						</a>
+						<a
+							href="mailto:samodivataikarakondjulat@gmail.com"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<i class="topIcon fa-solid fa-envelope"></i>
 						</a>
 					</div>
 				</div>

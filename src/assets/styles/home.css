@@ -5,7 +5,7 @@
 	background-color: #fbf5ef;
 	/* position: relative; */
 	height: 900px;
-	/* top: 0; */
+	top: 0;
 }
 
 .header-background {
@@ -13,7 +13,7 @@
 	height: 100%;
 	/* Set height to 100vh */
 	object-fit: cover;
-	filter: blur(1.5px);
+	/* filter: blur(1px); */
 }
 
 .header-content {

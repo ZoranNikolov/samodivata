@@ -26,7 +26,7 @@ export default function Header() {
 				<div
 					className={`header-content ${showHeader ? "fadeIn show" : "fadeIn"}`}
 				>
-					<h2>Читалище Светлина - с. Голямо Враново</h2>
+					<h2>Самодивата и Караконджулът - поредица и творчество</h2>
 				</div>
 			</div>
 			<div className="aboutMe">
