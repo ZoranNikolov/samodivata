@@ -595,6 +595,8 @@ body.slider-open {
 	padding-bottom: 5px;
 }
 
+.height-auto{height: auto;}
+
 @media screen and (max-width: 1024px) {
 	.slider-wrapper {
 		max-width: 80%;

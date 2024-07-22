@@ -1,18 +1,18 @@
 import "../../assets/styles/posts.css";
-import image from "../../../src/assets/images/shevica.jpg";
+import image from "../../../src/assets/images/crafts/craft1.png";
 import { Helmet } from "react-helmet";
 
 export default function Blog() {
 	return (
 		<div className="singlePost">
 			<div className="singlePostWrapper">
-				<img src={image} alt="break-up" className="singlePostImg" />
-				<h1 className="singlePostTitle">Традиции и фолклор</h1>
+				<img src={image} alt="самодивата-поредица" className="singlePostImg height-auto" />
+				<h1 className="singlePostTitle">Самодивата и Караконджулът</h1>
 				<Helmet>
-					<title>Традиции и фолклор</title>
+					<title>Самодивата и Караконджулът</title>
 					<meta
 						name="description"
-						content="Традициите и фолклорът са неразделна част от нашата национална идентичност, предавана от поколения."
+						content="Информация за поредицата Самодивата и Караконджулът - отзиви."
 					/>
 				</Helmet>
 				<div className="singlePostDesc">

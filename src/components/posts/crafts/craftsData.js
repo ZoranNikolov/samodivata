@@ -1,4 +1,4 @@
-import craftImage1 from "../../../assets/images/crafts/craft1.jpg";
+import craftImage1 from "../../../assets/images/crafts/craft1.png";
 import craftImage2 from "../../../assets/images/crafts/craft2.jpg";
 import craftImage3 from "../../../assets/images/crafts/craft3.jpg";
 
