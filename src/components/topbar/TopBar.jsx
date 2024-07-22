@@ -120,8 +120,8 @@ export default function TopBar() {
 									<li className="hamburgerMenuItemSectionName">
 										<Link
 											className="link"
-											to="/about"
-											onClick={handleLinkClick("/events")}
+											to="/crafts"
+											onClick={handleLinkClick("/crafts")}
 										>
 											ТВОРЕНИЯ
 										</Link>
@@ -180,8 +180,8 @@ export default function TopBar() {
 							<li className="topListItem">
 								<Link
 									className="link"
-									to="/about"
-									onClick={handleLinkClick("/events")}
+									to="/crafts"
+									onClick={handleLinkClick("/crafts")}
 								>
 									<span>ТВОРЕНИЯ</span>
 								</Link>

@@ -1,9 +1,9 @@
 import "../../assets/styles/home.css";
 import backgroundImage from "../../assets/images/header-background.jpg";
-import aboutImg from "../../assets/images/aboutImg.jpg";
-import { Link } from "react-router-dom";
+// import aboutImg from "../../assets/images/aboutImg.jpg";
+// import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import ContactForm from "../../components/contact-form/contactForm";
+// import ContactForm from "../../components/contact-form/contactForm";
 
 export default function Header() {
 	const [showHeader, setShowHeader] = useState(false); // State to control header content visibility

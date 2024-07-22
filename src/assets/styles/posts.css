@@ -408,45 +408,45 @@ blockquote.w-90 {
 	text-align: center;
 } */
 
-/* Add styles for event cards */
+/* Add styles for craft cards */
 
-.events h1 {
+.crafts h1 {
 	margin: 20px 0px;
 	text-align: center;
 	font-size: 46px;
 	text-decoration: none;
 }
 
-.events h2 {
+.crafts h2 {
 	margin: 10px 0px;
 	font-size: 28px;
 	font-weight: normal;
 }
 
-.eventsGrid {
+.craftsGrid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 	gap: 20px;
 }
 
-.eventCard h3 {
+.craftCard h3 {
 	margin-top: 10px;
 	font-size: 18px;
 }
 
-.eventCard p {
+.craftCard p {
 	margin-top: 5px;
 	font-size: 14px;
 	color: #888;
 	text-decoration: none;
 }
 
-.eventCard p::first-letter,
-.singleEventCard p::first-letter {
+.craftCard p::first-letter,
+.singleCraftCard p::first-letter {
 	margin-left: 0px;
 }
 
-.eventCard {
+.craftCard {
 	position: relative;
 	/* Ensure proper positioning for the overlay */
 	background-color: #fff;
@@ -458,7 +458,7 @@ blockquote.w-90 {
 	/* Add transition effect for smooth hover */
 }
 
-.eventCard img {
+.craftCard img {
 	width: 100%;
 	height: 500px;
 	object-fit: cover;
@@ -466,7 +466,7 @@ blockquote.w-90 {
 	margin-bottom: 10px;
 }
 
-.singleEventCard {
+.singleCraftCard {
 	background-color: #fff;
 	border-radius: 8px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -475,7 +475,7 @@ blockquote.w-90 {
 	margin-bottom: 50px;
 }
 
-.singleEventCard img {
+.singleCraftCard img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -483,18 +483,18 @@ blockquote.w-90 {
 	margin-bottom: 10px;
 }
 
-.eventCard h3 {
+.craftCard h3 {
 	font-size: 18px;
 	margin-bottom: 5px;
 }
 
-.eventCard p {
+.craftCard p {
 	font-size: 14px;
 	color: #888;
 	margin-bottom: 0;
 }
 
-.eventCard::before {
+.craftCard::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -509,18 +509,18 @@ blockquote.w-90 {
 }
 
 /* Add hover effect */
-.eventCard:hover::before {
+.craftCard:hover::before {
 	opacity: 1;
 }
 
-.eventsGrid a {
+.craftsGrid a {
 	text-decoration: none;
 	/* Remove underline from the text within the link */
 	color: inherit;
 	/* Ensure the link inherits the text color */
 }
 
-.singleEventWrapper {
+.singleCraftWrapper {
 	width: 65%;
 	margin: 0 auto;
 }
@@ -651,20 +651,22 @@ body.slider-open {
 		padding: 25px 25px;
 	}
 
-	.events h1 {
+	.crafts
+ h1 {
 		font-size: 42px;
 	}
 
-	.events h2 {
+	.crafts
+ h2 {
 		font-size: 26px;
 	}
 
-	.singleEventCard {
+	.singleCraftCard {
 		width: 75%;
 		margin-bottom: 40px;
 	}
 
-	.singleEventWrapper {
+	.singleCraftWrapper {
 		width: 80%;
 	}
 
@@ -731,27 +733,28 @@ body.slider-open {
 		margin-right: 0;
 	}
 
-	/* .eventCard {
+	/* .craftCard {
         width: calc(80% - 20px);
     } */
 
-	.events h1 {
+	.crafts
+ h1 {
 		margin: 20px 0px;
 		text-align: center;
 		font-size: 38px;
 	}
 
-	.singleEventCard {
+	.singleCraftCard {
 		width: 80%;
 		margin-bottom: 40px;
 		padding: 15px;
 	}
 
-	.singleEventCard img {
+	.singleCraftCard img {
 		height: 300px;
 	}
 
-	.singleEventWrapper {
+	.singleCraftWrapper {
 		width: 90%;
 	}
 
@@ -782,25 +785,27 @@ body.slider-open {
 		/* padding-right: 50px; */
 	}
 
-	.eventsGrid {
+	.crafts
+Grid {
 		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	}
 
-	.events h1 {
+	.crafts
+ h1 {
 		margin: 20px 0px;
 		text-align: center;
 		font-size: 32px;
 	}
 
-	.singleEventCard {
+	.singleCraftCard {
 		margin-bottom: 20px;
 	}
 
-	.singleEventCard img {
+	.singleCraftCard img {
 		height: 300px;
 	}
 
-	.singleEventWrapper {
+	.singleCraftWrapper {
 		width: 100%;
 	}
 

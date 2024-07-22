@@ -6,14 +6,13 @@ import TopBar from './components/topbar/TopBar';
 import About from './pages/about/About';
 import Footer from './components/footer/Footer';
 import Gallery from './components/posts/gallery/gallery';
-import Events from './components/posts/events/events';
-import SingleEvent from './components/posts/events/singleEvent/singleEvent';
 import SingleGallery from './components/posts/gallery/singleGallery/singleGallery';
 import Blog from './pages/blog/blog';
 import News from './pages/news/news';
 import SingleNews from './pages/news/singleNews/singleNews';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-// import Player from './components/player/player';
+import Crafts from './components/posts/crafts/crafts';
+import SingleCraft from './components/posts/crafts/singleEvent/singleCraft';
 
 function ScrollToTopOnRouteChange() {
   const { pathname } = useLocation();
@@ -28,7 +27,6 @@ function ScrollToTopOnRouteChange() {
 function App() {
   return (
     <BrowserRouter>
-      {/* <Player /> */}
       <ScrollToTopOnRouteChange />
       <TopBar />
       <Helmet>
@@ -42,8 +40,8 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/news" element={<News />} />
         <Route path="/news/:newsId" element={<SingleNews />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/events/:eventId" element={<SingleEvent />} />
+        <Route path="/crafts" element={<Crafts />} />
+        <Route path="/crafts/:craftId" element={<SingleCraft />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/gallery/:galleryId" element={<SingleGallery />} />
       </Routes>
