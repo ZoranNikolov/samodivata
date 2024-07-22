@@ -29,13 +29,14 @@ export default function Header() {
 					<h2>Самодивата и Караконджулът - поредица и творчество</h2>
 				</div>
 			</div>
-			<div className="aboutMe">
+			
+			{/* <div className="aboutMe">
 				<div className="aboutMeContainer">
 					<div className="contentWrapper">
 						<h2 className="centered">
 							Добре дошли, приятели на българския фолклор!
 						</h2>
-						{/* <div className="card-container">
+						<div className="card-container">
 							<div className="card">
 								<div className="card-body p-5">
 									<div className="author-image-container d-flex justify-content-center mb-4">
@@ -65,7 +66,7 @@ export default function Header() {
 									</figure>
 								</div>
 							</div>
-						</div> */}
+						</div>
 						<p>
 							Основано през 1923 г., читалище „Светлина“ играе жизненоважна роля
 							в запазването и насърчаването на богатото културно наследство на
@@ -102,15 +103,15 @@ export default function Header() {
 					</div>
 
 					<div className="aboutMeImagesContainer">
-						{/* <img src={aboutMeImg1} alt="about-me-img-1" className="aboutMeImg" /> */}
+						<img src={aboutMeImg1} alt="about-me-img-1" className="aboutMeImg" />
 						<img src={aboutImg} alt="about-me-img-2" className="aboutMeImg" />
 					</div>
 				</div>
-			</div>
-			<div className="contact-form-container">
+			</div> */}
+			{/* <div className="contact-form-container">
 				<h3>Изпратете запитване</h3>
 				<ContactForm />
-			</div>
+			</div> */}
 		</>
 	);
 }
