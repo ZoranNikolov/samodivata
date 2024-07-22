@@ -595,7 +595,60 @@ body.slider-open {
 	padding-bottom: 5px;
 }
 
-.height-auto{height: auto;}
+.height-auto {
+	height: auto;
+}
+
+.min-height {
+	min-height: 70vh;
+}
+
+.contentWrapper {
+	align-items: center;
+	display: flex;
+	flex: 2 1;
+	flex-direction: column;
+	font-family: Varela rounded, sans-serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 2;
+	text-align: justify;
+	margin: 20px 0;
+}
+
+.width-75prc{width: 75%;}
+
+p>.click-here:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.click-here {
+	display: inline-block;
+	position: relative;
+	color: #666;
+	/* Change the color as needed */
+	text-decoration: none;
+	/* Remove underline */
+}
+
+.click-here::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #000000ca;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.click-here:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
 
 @media screen and (max-width: 1024px) {
 	.slider-wrapper {
@@ -735,11 +788,6 @@ body.slider-open {
 		margin-right: 0;
 	}
 
-	/* .craftCard {
-        width: calc(80% - 20px);
-    } */
-
-	.crafts
  h1 {
 		margin: 20px 0px;
 		text-align: center;

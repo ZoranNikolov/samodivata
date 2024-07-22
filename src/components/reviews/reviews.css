@@ -1,0 +1,162 @@
+.review-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 75px;
+}
+
+.review-list {
+	display: flex;
+	flex: 1;
+}
+
+.review {
+	display: flex;
+	flex: 3;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f1f1f1;
+	padding: 20px 30px;
+	margin: 10px;
+	position: relative;
+	font-family: "Varela rounded", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-align: left;
+}
+
+.review h3 {
+	margin-top: 10px;
+	/* Add margin for spacing between paragraphs and author name */
+}
+
+.review p.rating,
+.review p.review-author-name,
+.review p.review-author-occupation {
+	width: 100%;
+	text-align: right;
+	/* Left-align rating and author name */
+	margin-top: 5px;
+	/* Add some space between rating and author name */
+}
+
+.review p.review-author-occupation {
+	font-size: 14px;
+	margin-top: -5px;
+}
+
+.message {
+	/* background-color: #f1f1f1; */
+	/* flex: 1; */
+	height: 100%;
+	margin-left: 20px;
+	padding: 30px;
+	font-family: "Varela rounded", sans-serif;
+	line-height: 1.2;
+	letter-spacing: 1px;
+	text-align: cente;
+	width: 40%;
+}
+
+.message p::first-letter {
+	margin-left: 0;
+}
+
+.message h2 {
+	text-transform: uppercase;
+	font-size: 32px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.message p {
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 1px;
+}
+
+.author-image {
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	margin-top: -70px;
+}
+
+.author-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 3px;
+}
+
+.review p {
+	text-align: left;
+	/* Left-align paragraphs inside .review */
+	padding-bottom: 10px;
+}
+
+.review-author-name {
+	text-align: left;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+	.review-section {
+		flex-direction: column-reverse;
+		align-items: stretch;
+	}
+
+	.review-list {
+		flex-direction: column;
+	}
+
+	.review {
+		margin: 10px 0;
+		margin-bottom: 50px;
+	}
+
+	.message {
+		padding: 20px;
+		margin-left: 0;
+		margin-bottom: 50px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.review-section {
+		flex-direction: column-reverse;
+		align-items: stretch;
+	}
+
+	.review-list {
+		flex-direction: column;
+	}
+
+	.review {
+		margin: 10px 0;
+		margin-bottom: 75px;
+	}
+
+	.message {
+		padding: 20px;
+		margin-bottom: 75px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.review {
+		padding: 10px;
+	}
+
+	.message {
+		padding: 10px;
+	}
+}
