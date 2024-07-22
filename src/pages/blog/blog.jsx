@@ -2,7 +2,7 @@ import "../../assets/styles/posts.css";
 import image from "../../../src/assets/images/crafts/craft1.png";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import Reviews from "../../components/reviews/Reviews";
+// import Reviews from "../../components/reviews/Reviews";
 
 export default function Blog() {
 	return (
