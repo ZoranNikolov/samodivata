@@ -117,7 +117,7 @@ export default function TopBar() {
 										</Link>
 									</li>
 
-									<li className="hamburgerMenuItemSectionName">
+									{/* <li className="hamburgerMenuItemSectionName">
 										<Link
 											className="link"
 											to="/crafts"
@@ -125,7 +125,7 @@ export default function TopBar() {
 										>
 											ТВОРЕНИЯ
 										</Link>
-									</li>
+									</li> */}
 									<li className="hamburgerMenuItemSectionName">
 										<Link
 											className="link"
@@ -146,15 +146,15 @@ export default function TopBar() {
 											БЛОГ
 										</Link>
 									</li>
-									{/* <li className="hamburgerMenuItemSectionName">
+									<li className="hamburgerMenuItemSectionName">
 										<Link
 											className="link"
-											to="/news"
-											onClick={handleLinkClick("/news")}
+											to="/orders"
+											onClick={handleLinkClick("/orders")}
 										>
-											НОВИНИ
+											ЗА ПОРЪЧКИ
 										</Link>
-									</li> */}
+									</li>
 								</ul>
 							)}
 						</div>
@@ -177,7 +177,7 @@ export default function TopBar() {
 									<span>ЗА ПОРЕДИЦАТА</span>
 								</Link>
 							</li>
-							<li className="topListItem">
+							{/* <li className="topListItem">
 								<Link
 									className="link"
 									to="/crafts"
@@ -185,7 +185,7 @@ export default function TopBar() {
 								>
 									<span>ТВОРЕНИЯ</span>
 								</Link>
-							</li>
+							</li> */}
 							<li className="topListItem">
 								<Link
 									className="link"
@@ -204,15 +204,15 @@ export default function TopBar() {
 									<span>БЛОГ</span>
 								</Link>
 							</li>
-							{/* <li className="topListItem">
+							<li className="topListItem">
 								<Link
 									className="link"
-									to="/news"
-									onClick={handleLinkClick("/news")}
+									to="/orders"
+									onClick={handleLinkClick("/orders")}
 								>
-									<span>НОВИНИ</span>
+									<span>ЗА ПОРЪЧКИ</span>
 								</Link>
-							</li> */}
+							</li>
 						</ul>
 					</div>
 					<div className="topRight">

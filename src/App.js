@@ -8,11 +8,10 @@ import Footer from './components/footer/Footer';
 import Gallery from './components/posts/gallery/gallery';
 import SingleGallery from './components/posts/gallery/singleGallery/singleGallery';
 import Blog from './pages/blog/blog';
-import News from './pages/news/news';
-import SingleNews from './pages/news/singleNews/singleNews';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Crafts from './components/posts/crafts/crafts';
-import SingleCraft from './components/posts/crafts/singleEvent/singleCraft';
+// import Crafts from './components/posts/crafts/crafts';
+// import SingleCraft from './components/posts/crafts/singleEvent/singleCraft';
+import Orders from './pages/orders/Orders';
 
 function ScrollToTopOnRouteChange() {
   const { pathname } = useLocation();
@@ -37,11 +36,10 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/orders" element={<Orders />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/news/:newsId" element={<SingleNews />} />
-        <Route path="/crafts" element={<Crafts />} />
-        <Route path="/crafts/:craftId" element={<SingleCraft />} />
+        {/* <Route path="/crafts" element={<Crafts />} /> */}
+        {/* <Route path="/crafts/:craftId" element={<SingleCraft />} /> */}
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/gallery/:galleryId" element={<SingleGallery />} />
       </Routes>
