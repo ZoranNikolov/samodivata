@@ -1,4 +1,4 @@
-import choice1 from "../../../assets/images/gallery/choice/1.png";
+import choice1 from "../../../assets/images/gallery/choice/1.jpg";
 import choice2 from "../../../assets/images/gallery/choice/2.jpg";
 import choice3 from "../../../assets/images/gallery/choice/3.jpg";
 import choice4 from "../../../assets/images/gallery/choice/4.jpg";
@@ -6,7 +6,7 @@ import choice5 from "../../../assets/images/gallery/choice/5.jpg";
 import choice6 from "../../../assets/images/gallery/choice/6.jpg";
 import choice7 from "../../../assets/images/gallery/choice/7.jpg";
 import choice8 from "../../../assets/images/gallery/choice/8.jpg";
-import choice9 from "../../../assets/images/gallery/choice/9.jpg";
+import choice9 from "../../../assets/images/gallery/choice/9.png";
 import mysticCreatures1 from "../../../assets/images/gallery/mystic-creatures/1.jpg";
 import mysticCreatures2 from "../../../assets/images/gallery/mystic-creatures/2.jpg";
 import mysticCreatures3 from "../../../assets/images/gallery/mystic-creatures/3.jpg";

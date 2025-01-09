@@ -434,7 +434,7 @@ blockquote.w-90 {
 	margin-bottom: 20px;
 	transition: transform 0.3s ease-in-out;
 	width: 450px;
-	min-height: 78vh;
+	min-height: 725px;
 	/* Add transition effect for smooth hover */
 }
 
@@ -741,6 +741,10 @@ p>.click-here:hover {
 	.galleryGrid{
 		flex-direction: column;
 	}
+	.galleryCard{
+		width: 600px;
+		/* min-height: 600px; */
+	}
 	.singlePost {
 		width: 90%;
 	}
@@ -891,6 +895,9 @@ p>.click-here:hover {
 	.slick-arrow {
 		display: none !important
 	}
+	.galleryCard{
+		width: 550px;
+	}
 }
 
 /* Media Query for Mobile Phones (max-width: 576px) */
@@ -939,5 +946,8 @@ p>.click-here:hover {
 
 	.iframeWrapper {
 		height: 300px;
+	}
+	.galleryCard{
+		width: 300px;
 	}
 }

@@ -355,7 +355,7 @@ body {
 .rhap_main-controls-button{margin: 0 !important; line-height: 45px !important;}
 
 /* Media Query for Tablets (max-width: 992px) */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
 	.topCenter {
 		flex: 6;
 		display: flex;
